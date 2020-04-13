@@ -26,8 +26,7 @@ public class Main {
                 continue;
             }
             for (int i = 0; i < 3; i++){
-                check_fail &= !Pattern.matches("^.*([^a-zA-Z]+).*$", fields[i]);
-                System.out.println(Pattern.matches("^.*([^a-zA-Z]+).*$", fields[i]));
+                check_fail &= !Pattern.matches("^.*([^a-zA-Zа-яА-Я]+).*$", fields[i]);
             }
             if (!check_fail){
                 System.out.println("Wrong names, try again!");
